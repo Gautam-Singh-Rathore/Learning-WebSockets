@@ -136,29 +136,7 @@ headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
 
 - **`ChatMessage`**: A custom object representing the content and structure of a chat message (typically containing sender, message content, timestamp, etc.).
 
----
 
-### Possible Structure of `ChatMessage` (For Context):
-
-This class, though not defined in the provided code, might look something like this:
-
-```java
-public class ChatMessage {
-    private String sender;
-    private String content;
-    private MessageType type;
-
-    // getters and setters
-
-    public enum MessageType {
-        CHAT, JOIN, LEAVE
-    }
-}
-```
-
-- **`sender`**: The username of the person sending the message.
-- **`content`**: The message text.
-- **`type`**: The type of the message (e.g., a normal chat message, a user joining, or a user leaving).
 
 ---
 
